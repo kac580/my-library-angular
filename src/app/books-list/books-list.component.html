@@ -1,1 +1,11 @@
-<p>books-list works!</p>
+<h3>{{name}}</h3>
+<ul>
+    <li *ngFor="let book of books">
+        <span class="clickable" (click)="details(book)">{{ book.title }}</span>,
+        {{ book.year }}, {{book.author}}
+    </li>
+</ul>
+<label>Title <input [(ngModel)] ="newTitle" type="text"></label>
+<label>Year <input [(ngModel)] ="newYear" type="text"></label>
+<label>Author <input [(ngModel)] ="newAuthor" type="text"></label>
+<button class="btn-primary" (click)="addBook()">Add</button>
