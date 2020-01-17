@@ -28,4 +28,5 @@ export class BooksListComponent implements OnInit {
     let book = new Book (this.newTitle, this.newAuthor, this.newYear);
     this.books.push(book);
   }
+
 }

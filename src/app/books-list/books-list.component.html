@@ -1,8 +1,9 @@
 <h3>{{name}}</h3>
 <ul>
     <li *ngFor="let book of books">
-        <span class="clickable" (click)="details(book)">{{ book.title }}</span>,
-        {{ book.year }}, {{book.author}}
+        {{ book.title }},
+        {{ book.year }}, 
+        {{book.author}}
     </li>
 </ul>
 <label>Title <input [(ngModel)] ="newTitle" type="text"></label>
