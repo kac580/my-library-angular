@@ -24,7 +24,7 @@ export class BooksListComponent implements OnInit {
     alert(`details for ${book.title}`)
   }
 
-  addMovie() {
+  addBook() {
     let book = new Book (this.newTitle, this.newAuthor, this.newYear);
     this.books.push(book);
   }
